@@ -9,7 +9,13 @@ import "bootstrap";
 import "../styles/index.scss";
 
 //import your own components
-import { Home } from "./component/home.js";
+
+import { SecondCounter } from "./component/SecondCounter.js";
 
 //render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
+ReactDOM.render(
+	<SecondCounter
+		seconds={1000} //={parseInt(prompt("Ingrese el número máximo de segundos: "))}
+	/>,
+	document.querySelector("#app")
+);
